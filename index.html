@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Avinash Dixit | Ph.D. Research Scholar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --primary:#1e3a8a;
+    --secondary:#2563eb;
+    --light:#f8fafc;
+    --white:#ffffff;
+    --text:#334155;
+    --shadow:0 4px 20px rgba(0,0,0,0.08);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--light);
+    color:var(--text);
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-bottom:20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header h3{
+    font-weight:400;
+    margin:10px 0;
+}
+
+header p{
+    margin:5px 0;
+}
+
+.links{
+    margin-top:20px;
+}
+
+.links a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    font-weight:500;
+    transition:opacity 0.3s;
+}
+
+.links a:hover{
+    opacity:0.75;
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+    background:white;
+    margin:25px 0;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:var(--shadow);
+}
+
+h2{
+    color:var(--primary);
+    margin-bottom:20px;
+    border-bottom:3px solid var(--secondary);
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+/* ================= GRID ================= */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+/* ================= CARDS ================= */
+
+.card{
+    background:#eff6ff;
+    padding:22px;
+    border-radius:12px;
+    transition:transform 0.25s, box-shadow 0.25s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.10);
+}
+
+.card h3{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.card p{
+    margin-bottom:8px;
+}
+
+/* ================= TAGS ================= */
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.tag{
+    background:#dbeafe;
+    color:var(--primary);
+    padding:8px 15px;
+    border-radius:25px;
+    font-size:14px;
+    font-weight:500;
+}
+
+/* ================= LIST ================= */
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* ================= PROJECT BUTTONS ================= */
+
+.project-button{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 18px;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:500;
+    transition:transform 0.2s, opacity 0.2s;
+}
+
+.project-button:hover{
+    transform:translateY(-2px);
+    opacity:0.9;
+}
+
+.kmeans-button{
+    background:#2563eb;
+}
+
+.fuzzy-button{
+    background:#059669;
+}
+/* ================= ACADEMIC RESOURCES ================= */
+
+.resource-card{
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+    padding:22px;
+    border-radius:12px;
+    transition:transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.resource-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    border-color:#93c5fd;
+}
+
+.resource-icon{
+    font-size:32px;
+    margin-bottom:12px;
+}
+
+.resource-card h3{
+    color:var(--primary);
+    margin-bottom:8px;
+}
+
+.resource-card p{
+    margin-bottom:14px;
+    color:#64748b;
+    font-size:14px;
+}
+
+.resource-button{
+    display:inline-block;
+    padding:9px 16px;
+    background:var(--secondary);
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:500;
+    transition:transform 0.2s, opacity 0.2s;
+}
+
+.resource-button:hover{
+    transform:translateY(-2px);
+    opacity:0.9;
+}
+/* ================= LECTURE NOTES ================= */
+
+.lecture-card{
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+    padding:22px;
+    border-radius:12px;
+    transition:transform 0.25s, box-shadow 0.25s;
+}
+
+.lecture-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.lecture-card h3{
+    color:var(--primary);
+    margin-bottom:8px;
+}
+
+.lecture-card p{
+    color:#64748b;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.lecture-button{
+    display:inline-block;
+    padding:9px 16px;
+    background:var(--secondary);
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:500;
+    transition:transform 0.2s, opacity 0.2s;
+}
+
+.lecture-button:hover{
+    transform:translateY(-2px);
+    opacity:0.9;
+}
+/* ================= FOOTER ================= */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    header{
+        padding:60px 20px;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .profile{
+        width:140px;
+        height:140px;
+    }
+
+    section{
+        padding:20px;
+    }
+
+    .links a{
+        display:inline-block;
+        margin:5px 7px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <img src="Untitled design.jpg"
+         alt="Avinash Dixit"
+         class="profile">
+
+    <h1>Avinash Dixit</h1>
+
+    <h3>Ph.D. Research Scholar</h3>
+
+    <p>Department of Computer Science and Engineering</p>
+
+    <p>Indian Institute of Technology Indore</p>
+
+    <p>Research Supervisor: Prof. Surya Prakash</p>
+
+    <div class="links">
+
+        <a href="mailto:phd2501201003@iiti.ac.in">
+            Email
+        </a>
+
+        <a href="https://github.com/Avinashdixitt"
+           target="_blank">
+            GitHub
+        </a>
+
+        <a href="https://linkedin.com/in/avinashdixitt"
+           target="_blank">
+            LinkedIn
+        </a>
+
+        <a href="https://scholar.google.com/citations?hl=en&user=si_iw6sAAAAJ&view"
+           target="_blank">
+            Google Scholar
+        </a>
+
+        <a href="https://orcid.org/0009-0008-3530-5820"
+           target="_blank">
+            ORCID
+        </a>
+
+    </div>
+
+</header>
+
+
+<div class="container">
+
+
+<!-- ================= ABOUT ================= -->
+
+<section>
+
+    <h2>About Me</h2>
+
+    <p>
+        I am a Ph.D. Research Scholar in the Department of Computer
+        Science and Engineering at IIT Indore under the supervision
+        of Prof. Surya Prakash. My research focuses on Livestock
+        Biometrics, Computer Vision, Deep Learning, Artificial
+        Intelligence, and Pattern Recognition. Prior to joining IIT
+        Indore, I completed my B.Tech in Computer Science and
+        Engineering and worked as a Software Engineer at Round The
+        Clock Technologies. I have also gained industrial experience
+        through internships in Machine Learning, Internet of Things
+        (IoT), and Robotics.
+    </p>
+
+</section>
+
+
+<!-- ================= RESEARCH INTERESTS ================= -->
+
+<section>
+
+    <h2>Research Interests</h2>
+
+    <div class="tags">
+
+        <div class="tag">Livestock Biometrics</div>
+
+        <div class="tag">Computer Vision</div>
+
+        <div class="tag">Deep Learning</div>
+
+        <div class="tag">Artificial Intelligence</div>
+
+        <div class="tag">Pattern Recognition</div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section>
+
+    <h2>Education</h2>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <h3>Ph.D. in CSE</h3>
+
+            <p>
+                Indian Institute of Technology Indore
+            </p>
+
+            <p>
+                2025 – Present
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>B.Tech in CSE</h3>
+
+            <p>
+                Dr. A.P.J. Abdul Kalam Technical University
+            </p>
+
+            <p>
+                2021 – 2025
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>School Education</h3>
+
+            <p>
+                Jawahar Navodaya Vidyalaya
+            </p>
+            <p>
+                2013 – 2020
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROFESSIONAL EXPERIENCE ================= -->
+
+<section>
+
+    <h2>Professional Experience</h2>
+
+    <ul>
+
+        <li>
+            <strong>Software Engineer</strong>
+            – Round The Clock Technologies
+        </li>
+
+        <li>
+            <strong>Machine Learning Intern</strong>
+            – Infosys Springboard
+        </li>
+
+        <li>
+            <strong>IoT Intern</strong>
+            – NASSCOM FutureSkills Prime
+        </li>
+
+        <li>
+            <strong>Robotics Intern</strong>
+            – Kodacy
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- ================= RESEARCH PROJECTS ================= -->
+
+<section>
+
+    <h2>Projects</h2>
+
+    <div class="grid">
+
+
+        <!-- LIVESTOCK BIOMETRICS -->
+
+        <div class="card">
+
+            <h3>
+                Livestock Biometric Identification Systems
+            </h3>
+
+            <p>
+                AI-based cattle identification using muzzle
+                biometrics, computer vision, deep learning,
+                and robust feature representation.
+            </p>
+
+        </div>
+
+
+        <!-- K-MEANS -->
+
+        <div class="card">
+
+            <h3>
+                K-Means Clustering Demo
+            </h3>
+
+            <p>
+                Interactive step-by-step demonstration of
+                K-Means clustering, including distance
+                calculation, cluster assignment, mean
+                calculation, centroid updates, and convergence.
+            </p>
+
+            <a href="kmeans_demo.html"
+               target="_blank"
+               class="project-button kmeans-button">
+
+                Open K-Means Demo →
+
+            </a>
+
+        </div>
+
+
+        <!-- FUZZY C-MEANS -->
+
+        <div class="card">
+
+            <h3>
+                Fuzzy C-Means Clustering Demo
+            </h3>
+
+            <p>
+                Interactive demonstration of Fuzzy C-Means
+                clustering with membership values, distance
+                calculations, weighted means, centroid updates,
+                and convergence at every iteration.
+            </p>
+
+            <a href="fuzzy_c_means_demo.html"
+               target="_blank"
+               class="project-button fuzzy-button">
+
+                Open Fuzzy C-Means Demo →
+
+            </a>
+
+        </div>
+
+
+        <!-- MEDISCAN -->
+
+        <div class="card">
+
+            <h3>
+                MediScan – AI Powered Healthcare Application
+            </h3>
+
+            <p>
+                AI-based healthcare application developed
+                using machine learning and intelligent analysis.
+            </p>
+
+        </div>
+
+
+        <!-- REAL ESTATE -->
+
+        <div class="card">
+
+            <h3>
+                Real Estate Price Prediction
+            </h3>
+
+            <p>
+                Machine learning based real estate price
+                prediction system.
+            </p>
+
+        </div>
+
+
+        <!-- SPORTS CLASSIFICATION -->
+
+        <div class="card">
+
+            <h3>
+                Sports Celebrity Image Classification
+            </h3>
+
+            <p>
+                Computer vision and deep learning based
+                image classification project.
+            </p>
+
+        </div>
+
+
+        <!-- IOT -->
+
+        <div class="card">
+
+            <h3>
+                IoT Based Smart Solutions
+            </h3>
+
+            <p>
+                Internet of Things based solutions for
+                smart applications.
+            </p>
+
+        </div>
+
+
+        <!-- ROBOTICS -->
+
+        <div class="card">
+
+            <h3>
+                Robotics and Embedded Systems Projects
+            </h3>
+
+            <p>
+                Projects involving robotics, embedded systems,
+                automation, and intelligent control.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= LECTURE NOTES ================= -->
+
+<section>
+
+    <h2>Lecture Notes</h2>
+
+    <p style="margin-bottom:20px;">
+        Selected lecture notes and learning materials covering
+        topics in computer science, machine learning, pattern
+        recognition, and related areas.
+    </p>
+
+    <div class="grid">
+
+        <div class="lecture-card">
+
+            <h3>Lecture 01 — Introduction</h3>
+
+            <p>
+                Lecture notes and study material.
+            </p>
+
+            <a href="lectures/Agglomerative_Hierarchical_Clustering.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="lecture-button">
+                View PDF →
+            </a>
+
+        </div>
+
+
+    <!----   <div class="lecture-card">
+
+            <h3>Lecture 02 — Pattern Recognition</h3>
+
+            <p>
+                Lecture notes and study material.
+            </p>
+
+            <a href="lectures/lecture-02.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="lecture-button">
+                View PDF →
+            </a>
+
+        </div>
+
+
+        <div class="lecture-card">
+
+            <h3>Lecture 03 — Machine Learning</h3>
+
+            <p>
+                Lecture notes and study material.
+            </p>
+
+            <a href="lectures/lecture-03.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="lecture-button">
+                View PDF →
+            </a>
+
+        </div>
+
+
+        <div class="lecture-card">
+
+            <h3>Lecture 04 — Clustering</h3>
+
+            <p>
+                Lecture notes and study material.
+            </p>
+
+            <a href="lectures/lecture-04.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="lecture-button">
+                View PDF →
+            </a>
+
+        </div>
+
+    </div>
+
+</section> ----!>
+
+<!-- ================= LEADERSHIP ================= -->
+
+<section>
+
+    <h2>Leadership & Activities</h2>
+
+    <ul>
+
+        <li>
+            Secretary – IEEE Student Branch RKGIT
+        </li>
+
+        <li>
+            Graphic Designer – IEEE Student Branch RKGIT
+        </li>
+
+        <li>
+            Academic Head – Light De Literacy
+        </li>
+
+        <li>
+            Anchoring and Event Management Activities
+        </li>
+
+        <li>
+            Volunteer and Student Leadership Initiatives
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- ================= CERTIFICATIONS ================= -->
+
+<section>
+
+    <h2>Certifications</h2>
+
+    <ul>
+
+        <li>
+            AWS Machine Learning Certification
+        </li>
+
+        <li>
+            Infosys Springboard Certifications
+        </li>
+
+        <li>
+            IoT Internship Certification
+        </li>
+
+        <li>
+            Robotics Internship Certification
+        </li>
+
+        <li>
+            NCC B Certificate
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<section>
+
+    <h2>Achievements & Awards</h2>
+
+    <ul>
+
+        <li>
+            Ph.D. Research Scholar – IIT Indore
+        </li>
+
+        <li>
+            GATE CS Qualified
+        </li>
+
+        <li>
+            NCC B Certificate Holder
+        </li>
+
+        <li>
+            Rajya Puraskar (Scouts & Guides)
+        </li>
+
+        <li>
+            Best Drill Award
+        </li>
+
+        <li>
+            District Parade Participant
+        </li>
+
+        <li>
+            IEEE HackQuest Finalist
+        </li>
+
+        <li>
+            Winner – Line Following Robot Competition
+        </li>
+
+        <li>
+            Winner – Egg Dropping Competition
+        </li>
+
+        <li>
+            Winner – Albatross Challenge
+        </li>
+
+        <li>
+            Anchoring and Event Management Recognition
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- ================= PUBLICATIONS ================= -->
+
+<section>
+
+    <h2>Publications</h2>
+
+    <p>
+        Research publications, conference papers, and scholarly
+        contributions will be updated here as they become available.
+    </p>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section>
+
+    <h2>Contact</h2>
+
+    <p>
+        Email: phd2501201003@iiti.ac.in
+    </p>
+
+    <p>
+        Department of Computer Science and Engineering<br>
+        Indian Institute of Technology Indore
+    </p>
+
+</section>
+
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 Avinash Dixit
+    </p>
+
+    <p>
+        Ph.D. Research Scholar |
+        Department of Computer Science and Engineering |
+        IIT Indore
+    </p>
+
+</footer>
+
+
+</body>
+</html>
